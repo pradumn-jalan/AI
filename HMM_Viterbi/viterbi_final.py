@@ -20,11 +20,11 @@ with open("train.txt","r") as f1:
                 
 for i in d.keys():
     d[i]=d[i]/float(x)
-    #i=prev, j=current, Tj=current tag, Ti=prev tag, W=current word  
-s=d.keys()    
-ep={}       #emission     ep[Tj][Wj] =  p(Wj & Tj)/p(Tj)
-tp={}       #transition     tp[Ti][Tj] =  p(Tj & Ti)/p(Ti)
-#w={}        #count for total no. of occurance of each word
+                
+              #i=prev, j=current, Tj=current tag, Ti=prev tag, W=current word      
+s=d.keys()    #list of all possible Tags
+ep={}         #emission     ep[Tj][Wj] =  p(Wj & Tj)/p(Tj)
+tp={}         #transition     tp[Ti][Tj] =  p(Tj & Ti)/p(Ti)
 for i in s:
     ep[i]={}
 
@@ -65,7 +65,7 @@ y=ep["VERB"].keys()
 
 import pandas as pd
 
-j=raw_input("Enter the line\n")
+j=raw_input("Enter the line to be Tagged\n")   # Line must contain only the common english words existing in dataset
 l=j.strip().split(" ")
 #em=pd.DataFrame(ep)
 #tm=pd.DataFrame.from_dict(tp)

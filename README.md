@@ -1,5 +1,5 @@
 # AI
-Scripts, data sets and other files for some AI Assignments
+Scripts, data sets and other files
 
 # Hidden Markov Model , Viterbi Algorithm
 The aim here is to deduce the tags, words, transition probabilities, emission probabilities, and prior probabilities using some training data and then use these to predict POS tags using Viterbi's Algorithm.
@@ -7,7 +7,7 @@ The aim here is to deduce the tags, words, transition probabilities, emission pr
 # Linear Regression
 Basic Linear Regression with any number of features support. Gradient Descent Algorithm is used for training the model. More details under the sub-folder.
 
-# and Logistic Regression
+# Logistic Regression
 Basic Logistic Regression with any number of features support. Gradient Descent Algorithm is used for training the model. More details under the sub-folder. 
 
 # Proposition Logic
